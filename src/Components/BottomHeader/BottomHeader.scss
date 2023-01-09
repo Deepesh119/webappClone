@@ -1,0 +1,43 @@
+@use '../../styles/config.scss' as * ;
+
+.containerHeader{
+    display: grid;
+    grid-template-columns: 90vw 10vw;
+    background-color:$header-bottom ;
+    height: 3rem;
+    margin-top: 0px;
+    align-items: center;
+    color: $header-text;
+
+
+    @media screen and (max-width:769px) {
+        display: none;
+    }
+    
+    .sub-container{
+        display: flex;
+        justify-content: space-evenly;
+        color: $header-text;
+
+    }
+
+    .lastElement{
+        display: flex;
+        justify-content: center;
+
+        .hoverButton{
+            background-color: $header-button;
+            color: $header-text;
+            padding: 5px;
+        }
+
+        .hoverButton:hover{
+            background-color: $header-bg;
+            color: $header-text;
+            padding: 5px;
+        }
+
+    }
+
+
+}

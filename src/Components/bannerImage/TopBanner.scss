@@ -1,0 +1,8 @@
+.widthAdjust{
+    width:80vw;
+    margin-top: 1rem;
+     
+    @media screen and (max-width:769px){
+        width:100vw;
+    }
+}

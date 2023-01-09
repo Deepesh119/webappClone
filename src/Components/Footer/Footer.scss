@@ -1,0 +1,68 @@
+@use "../../styles/config.scss" as *;
+
+.footer {
+  background: $header-bg;
+  color: $header-text;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  padding: 3px;
+  margin-top: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+
+  @media only screen and (max-width:1396px){
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @media screen and (max-width: 769px) {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .One {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    .heading {
+      font-size: 24px;
+      max-height: fit-content;
+      margin-bottom: 1rem;
+    }
+
+    .input-div {
+      background-color: white;
+      width: 90%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+
+      @media screen and (max-width: 769px) {
+        width: 70vw;
+      }
+
+      .input-styles {
+        background-color: white;
+        width: 80%;
+        height: 30px;
+        border: none;
+        outline: none;
+      }
+
+      .react-icon-color {
+        color: $header-bg;
+      }
+    }
+  }
+
+  ul li {
+    list-style-type: none;
+    font-size: 20px;
+  }
+
+  ul li:hover {
+    text-decoration: underline;
+    color: $blueHover;
+  }
+}

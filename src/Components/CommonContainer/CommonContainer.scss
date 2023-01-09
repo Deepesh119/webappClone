@@ -1,0 +1,56 @@
+@use '../../styles/config.scss' as * ;
+
+.container{
+   display: flex;
+   justify-content: center;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+
+   .slider-Scroll{
+      overflow-y: hidden;
+   }
+
+   .topContent{
+     display: flex;
+     justify-content: space-between;
+     padding: 1rem;
+
+     .headingFont{
+      font-family: 'Kalam', cursive;
+     }
+
+     .content-color{
+       color: $blueHover;
+     }
+   }
+
+   .sub_container{
+     margin-top:10px;  
+     width: 80vw;
+     height: 60vh;
+    //  display: grid;
+     justify-content: center;
+     grid-template-columns: 16% 16% 16% 16% 16% 16%;
+     grid-gap:3px;
+
+
+     @media screen and (max-width:769px){
+         width:100vw;
+         display: grid;
+         grid-template-columns: auto auto auto;
+     }
+
+     .cardImage{
+         display: flex;
+         flex-direction: column;
+         justify-content: center !important;
+     }
+     .textAlign{
+      display: flex;
+      justify-content: center;
+    }
+
+   }
+}
+
+
